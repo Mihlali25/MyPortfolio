@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me |Mihlali Matshikiza Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MM</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Get In Touch</h1>
+            <p>I'm currently available for freelance work and full-time positions</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out for project inquiries, collaboration opportunities, or just to say hello!</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:john.doe@example.com">mmco.codes@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+27 67 202 1649</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Cape Town, SA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/mihlali25" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/johndoe" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            </a>
+                            <a href="https://codepen.io/mihlali25" target="_blank" aria-label="CodePen">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div id="formSuccess" class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your message has been sent successfully! I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability-section">
+            <h2>Availability</h2>
+            <div class="availability-content">
+                <div class="availability-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Full-Time Positions</h3>
+                    <p>Currently open to full-time remote or local opportunities in the Bay Area.</p>
+                    <a href="assets/resume.pdf" class="btn btn-small" download>Download Resume</a>
+                </div>
+                <div class="availability-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Freelance Projects</h3>
+                    <p>Available for select freelance projects. Let's discuss your requirements.</p>
+                    <a href="#contactForm" class="btn btn-small">Get a Quote</a>
+                </div>
+                <div class="availability-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Open Source</h3>
+                    <p>Interested in collaborating on open source projects. Reach out with ideas!</p>
+                    <a href="https://github.com/johndoe" target="_blank" class="btn btn-small">View GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of projects do you take on?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I specialize in web application development, including e-commerce platforms, SaaS products, and custom business solutions. I also enjoy working on creative portfolio sites and open source projects that solve interesting problems.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is your typical development process?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>My process begins with understanding your requirements through detailed discussions. Then I create wireframes and prototypes before moving to development. I follow agile methodologies with regular updates and iterations based on feedback. Quality assurance and testing are integrated throughout the process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do you charge for projects?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For fixed-scope projects, I provide a flat rate after understanding the requirements. For ongoing or larger projects, I typically work on an hourly basis. I'm happy to discuss the best pricing model for your specific needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's your response time for inquiries?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I strive to respond to all inquiries within 24 hours during weekdays. For urgent matters, please indicate this in your message and I'll prioritize your request.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">JD</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mihlali Matshikiza. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/faq-accordion.js"></script>
+</body>
+</html>

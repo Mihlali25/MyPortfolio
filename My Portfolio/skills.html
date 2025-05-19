@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | John Doe Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MM</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="skills-hero">
+            <h1>My Skills</h1>
+            <p>Technologies and tools I work with</p>
+        </section>
+
+        <section class="skills-section">
+            <div class="skills-categories">
+                <button class="category-btn active" data-category="all">All Skills</button>
+                <button class="category-btn" data-category="frontend">Frontend</button>
+                <button class="category-btn" data-category="backend">Backend</button>
+                <button class="category-btn" data-category="database">Database</button>
+                <button class="category-btn" data-category="devops">DevOps</button>
+                <button class="category-btn" data-category="tools">Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-card frontend" data-skill="html5">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%;"></div>
+                    </div>
+                    <p>Semantic HTML, Accessibility, SEO</p>
+                </div>
+
+                <div class="skill-card frontend" data-skill="css3">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%;"></div>
+                    </div>
+                    <p>Flexbox, Grid, Animations, Responsive Design</p>
+                </div>
+
+                <div class="skill-card frontend" data-skill="javascript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 92%;"></div>
+                    </div>
+                    <p>ES6+, DOM Manipulation, Async Programming</p>
+                </div>
+
+                <div class="skill-card frontend" data-skill="react">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%;"></div>
+                    </div>
+                    <p>Hooks, Context API, Redux, Next.js</p>
+                </div>
+
+                <div class="skill-card frontend" data-skill="vue">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3>Vue.js</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%;"></div>
+                    </div>
+                    <p>Vuex, Vue Router, Composition API</p>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card backend" data-skill="node">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%;"></div>
+                    </div>
+                    <p>Express, REST APIs, Authentication</p>
+                </div>
+
+                <div class="skill-card backend" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 75%;"></div>
+                    </div>
+                    <p>Django, Flask, Data Processing</p>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-card database" data-skill="mongodb">
+                    <div class="skill-icon">
+                        <img src="images/mongodb-icon.png" alt="MongoDB">
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 82%;"></div>
+                    </div>
+                    <p>Schema Design, Aggregation, Atlas</p>
+                </div>
+
+                <div class="skill-card database" data-skill="postgresql">
+                    <div class="skill-icon">
+                        <img src="images/postgresql-icon.png" alt="PostgreSQL">
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 78%;"></div>
+                    </div>
+                    <p>SQL Queries, Indexing, Performance</p>
+                </div>
+
+                <!-- DevOps Skills -->
+                <div class="skill-card devops" data-skill="docker">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%;"></div>
+                    </div>
+                    <p>Containerization, Docker Compose</p>
+                </div>
+
+                <div class="skill-card devops" data-skill="aws">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 70%;"></div>
+                    </div>
+                    <p>EC2, S3, Lambda, RDS</p>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card tools" data-skill="git">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%;"></div>
+                    </div>
+                    <p>Version Control, GitHub, GitLab</p>
+                </div>
+
+                <div class="skill-card tools" data-skill="figma">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma</h3>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 75%;"></div>
+                    </div>
+                    <p>UI Design, Prototyping, Collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h2>Work Experience by Technology</h2>
+            <div class="experience-chart">
+                <div class="chart-bar">
+                    <div class="bar-label">HTML/CSS</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 95%;" data-years="7"></div>
+                    </div>
+                </div>
+                <div class="chart-bar">
+                    <div class="bar-label">JavaScript</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 90%;" data-years="6"></div>
+                    </div>
+                </div>
+                <div class="chart-bar">
+                    <div class="bar-label">React</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 85%;" data-years="4"></div>
+                    </div>
+                </div>
+                <div class="chart-bar">
+                    <div class="bar-label">Node.js</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 80%;" data-years="4"></div>
+                    </div>
+                </div>
+                <div class="chart-bar">
+                    <div class="bar-label">MongoDB</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 75%;" data-years="3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-section">
+            <h2>Currently Learning</h2>
+            <div class="learning-items">
+                <div class="learning-card">
+                    <h3>WebAssembly</h3>
+                    <p>Exploring high-performance web applications</p>
+                </div>
+                <div class="learning-card">
+                    <h3>Rust</h3>
+                    <p>Learning systems programming language</p>
+                </div>
+                <div class="learning-card">
+                    <h3>GraphQL</h3>
+                    <p>Advanced API development techniques</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">JD</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mihlali Matshikiza. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/skills-filter.js"></script>
+</body>
+</html>
